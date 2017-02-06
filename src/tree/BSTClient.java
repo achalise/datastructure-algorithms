@@ -1,5 +1,8 @@
 package tree;
 
+import graph.Graph;
+import graph.Vertex;
+
 public class BSTClient {
 	public static void main(String[] args) {
 		ExampleBST table = new ExampleBST();
@@ -42,6 +45,7 @@ public class BSTClient {
 		
 		System.out.println("Remove key O "); 
 		table.remove("O");
-		table.printInOrder();		
+		table.printInOrder();
+
 	}
 }

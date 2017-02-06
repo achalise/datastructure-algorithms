@@ -4,9 +4,18 @@ package strings.similarity;
 public class SimilarStringsTester {
 
     public static void main(String[] args) {
-        String[] listOfStrings = new String[]{"Scala for the impatient ", "Scala in Action", "Programming Scala",
-                                                "Functional programming in scala", "Scala in depth"};
-        String[] stringsToCompare = new String[]{"Scala", "Programming", "Scala programming", "Scala the language"};
+        String[] listOfStrings = new String[]{
+                "Haymarket convenience store",
+                "shop",
+                "local store",
+                "Epping coles",
+                "coles Epping",
+                "scala programming language",
+                "java programming language",
+                "programming in java",
+                "story of a nation rising"
+        };
+        String[] stringsToCompare = new String[]{"store", "convenience", "stop", "coles", "java", "scala program", "rising"};
 
         for(String toCompare: stringsToCompare) {
             System.out.println("Calculating similarity score for input: '" + toCompare + "' using CharacterPairs");
