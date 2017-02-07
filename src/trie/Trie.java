@@ -41,7 +41,6 @@ public class Trie {
             }
         }
         return node.isWord();
-
     }
 
     public void delete(String key) {
